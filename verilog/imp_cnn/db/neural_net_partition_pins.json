@@ -1,0 +1,137 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "RESULT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "STOP",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "GO",
+					"strict" : false
+				},
+				{
+					"name" : "we_database",
+					"strict" : false
+				},
+				{
+					"name" : "dp_database[10]",
+					"strict" : false
+				},
+				{
+					"name" : "address_p_database[0]",
+					"strict" : false
+				},
+				{
+					"name" : "address_p_database[1]",
+					"strict" : false
+				},
+				{
+					"name" : "address_p_database[2]",
+					"strict" : false
+				},
+				{
+					"name" : "address_p_database[3]",
+					"strict" : false
+				},
+				{
+					"name" : "address_p_database[4]",
+					"strict" : false
+				},
+				{
+					"name" : "address_p_database[5]",
+					"strict" : false
+				},
+				{
+					"name" : "address_p_database[6]",
+					"strict" : false
+				},
+				{
+					"name" : "address_p_database[7]",
+					"strict" : false
+				},
+				{
+					"name" : "address_p_database[8]",
+					"strict" : false
+				},
+				{
+					"name" : "address_p_database[9]",
+					"strict" : false
+				},
+				{
+					"name" : "address_p_database[10]",
+					"strict" : false
+				},
+				{
+					"name" : "address_p_database[11]",
+					"strict" : false
+				},
+				{
+					"name" : "address_p_database[12]",
+					"strict" : false
+				},
+				{
+					"name" : "dp_database[9]",
+					"strict" : false
+				},
+				{
+					"name" : "dp_database[8]",
+					"strict" : false
+				},
+				{
+					"name" : "dp_database[7]",
+					"strict" : false
+				},
+				{
+					"name" : "dp_database[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dp_database[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dp_database[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dp_database[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dp_database[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dp_database[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dp_database[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

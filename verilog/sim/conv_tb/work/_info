@@ -1,0 +1,64 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ADMIN/GithubClonedRepo/Verilog-Generator-of-Neural-Net-Digit-Detector-for-FPGA/verilog/sim/conv_tb
+T_opt
+!s110 1703625947
+V:l7AFi@P5ofJhbYZQdCW?3
+04 7 4 work conv_tb fast 0
+=1-309c2317fce4-658b44db-af-4714
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.7c;67
+vconv
+!s110 1703623827
+!i10b 1
+!s100 KXn_@oB_:Lc:@W^Y:bfcW1
+I>]AKI57=3gWFeDEW^THB=0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1703612808
+8../../code/neuroset/conv.v
+F../../code/neuroset/conv.v
+L0 1
+Z3 OL;L;10.7c;67
+r1
+!s85 0
+31
+!s108 1703623827.000000
+!s107 ../../code/neuroset/conv.v|
+!s90 -reportprogress|300|../../code/neuroset/conv.v|
+!i113 0
+Z4 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vconv_tb
+DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+!s110 1703625943
+!i10b 1
+!s100 =?Va:0i=W[:zfjheG8Aa82
+IT9?Om2ScNXfGJ<dP^Cl>P2
+R2
+!s105 conv_tb_sv_unit
+S1
+R0
+w1703625886
+8conv_tb.sv
+Fconv_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1703625943.000000
+!s107 conv_tb.sv|
+!s90 -reportprogress|300|conv_tb.sv|
+!i113 0
+R4
+R1

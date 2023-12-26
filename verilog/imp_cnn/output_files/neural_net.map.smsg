@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at TOP.v(24): object "RESULT" differs only in case from object "result" in the same scope File: C:/Users/ADMIN/GithubClonedRepo/Verilog-Generator-of-Neural-Net-Digit-Detector-for-FPGA/verilog/code/neuroset/TOP.v Line: 24

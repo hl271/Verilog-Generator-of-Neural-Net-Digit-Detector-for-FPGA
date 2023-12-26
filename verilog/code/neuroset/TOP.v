@@ -10,22 +10,22 @@ parameter SIZE_6 = SIZE_1*6;
 parameter SIZE_7 = SIZE_1*7;
 parameter SIZE_8 = SIZE_1*8;
 parameter SIZE_9 = SIZE_1*9;
-parameter SIZE_address_pix = 13;
+parameter SIZE_address_pix = 13;			// pixel's address size
 parameter SIZE_address_pix_t = 12;
-parameter SIZE_address_wei = 9;
-parameter picture_size = 28;
+parameter SIZE_address_wei = 9;				// weight's address size
+parameter picture_size = 28;				// dimension of picture
 parameter picture_storage_limit = 0;
 parameter razmpar = picture_size >> 1;
 parameter razmpar2  = picture_size >> 2;
 parameter picture_storage_limit_2 = ((picture_size*picture_size)*4) >> (num_conv >> 1);
-parameter convolution_size = 9;
+parameter convolution_size = 9;				// number of items in convolution
 input clk;
-input GO;
-output [3:0] RESULT;
-input we_database;
-input signed [SIZE_1-1:0] dp_database;
-input [12:0] address_p_database;
-output reg STOP;
+input GO;									// start signal of CNN processing
+input we_database;							// write enable signal for input image data into database
+input signed [SIZE_1-1:0] dp_database;		// input image data, each pixel value (SIZE_1-bit) sent sequentially
+input [12:0] address_p_database;			// address of input image data in database
+output [3:0] RESULT;						// classification result: 11 classes (10 classes from 0 to 9 and 1 class for background)
+output reg STOP;							// stop signal of CNN processing
 
 wire signed [SIZE_1-1:0] data;
 wire re_RAM;
@@ -123,7 +123,7 @@ reg nozero_dense;
 
 database #(SIZE_1) database (.clk(clk),.datata(data),.re(re_RAM),.address(address),.we(we_database),.dp(dp_database),.address_p(address_p_database));
 conv_TOP #(num_conv,SIZE_1,SIZE_2,SIZE_3,SIZE_4,SIZE_5,SIZE_6,SIZE_7,SIZE_8,SIZE_9,SIZE_address_pix,SIZE_address_pix_t,SIZE_address_wei) conv(clk,conv_en,STOP_conv,memstartp_lvl,memstartw_lvl,memstartzap_num,read_addressp_conv,write_addressp_conv,read_addresstp,write_addresstp,read_addressw_conv,we_conv,re_wb_conv,re_conv,we_tp,re_tp,qp,qtp,qw,dp_conv,dtp,prov,matrix,matrix2,i_conv,lvl,slvl,Y1,w11_c,w12_c,w13_c,w14_c,w15_c,w16_c,w17_c,w18_c,w19_c,p1_c,p2_c,p3_c,p4_c,p5_c,p6_c,p7_c,p8_c,p9_c,go_conv_TOP,num,filt,bias,globmaxp_en);
-memorywork #(num_conv,picture_size,convolution_size,SIZE_1,SIZE_2,SIZE_3,SIZE_4,SIZE_5,SIZE_6,SIZE_7,SIZE_8,SIZE_9,SIZE_address_pix,SIZE_address_wei) block(.clk(clk),.we_p(we_p_zagr),.we_w(we_w),.re_RAM(re_RAM),.addrp(write_addressp_zagr),.addrw(write_addressw),.dp(dp_zagr),.dw(dw),.step_out(step),.nextstep(nextstep),.data(data),.address(address),.GO(GO),.in_dense(in_dense));
+DatabaseToMem #(num_conv,picture_size,convolution_size,SIZE_1,SIZE_2,SIZE_3,SIZE_4,SIZE_5,SIZE_6,SIZE_7,SIZE_8,SIZE_9,SIZE_address_pix,SIZE_address_wei) block(.clk(clk),.we_p(we_p_zagr),.we_w(we_w),.re_RAM(re_RAM),.addrp(write_addressp_zagr),.addrw(write_addressw),.dp(dp_zagr),.dw(dw),.step_out(step),.nextstep(nextstep),.data(data),.address(address),.GO(GO),.in_dense(in_dense));
 RAM #(picture_size,SIZE_1,SIZE_2,SIZE_4,SIZE_9,SIZE_address_pix,SIZE_address_pix_t,SIZE_address_wei) memory(qp,qtp,qw,dp,dtp,dw,write_addressp,read_addressp,write_addresstp,read_addresstp,write_addressw,read_addressw,we_p,we_tp,we_w,re_p,re_tp,re_w,clk);
 border border(clk,conv_en,i_conv,matrix,prov);
 maxp #(SIZE_1,SIZE_2,SIZE_3,SIZE_4,SIZE_address_pix) maxpooling(clk,maxp_en,memstartp_lvl,memstartzap_num,read_addressp_maxp,write_addressp_maxp,re_maxp,we_maxp,qp,dp_maxp,STOP_maxp,matrix2,matrix);

@@ -72,7 +72,8 @@ if (conv_en==1)        //enable convolution
 		   case (marker)
 				0: begin re_wb=1; read_addressw=memstartw+(2'd0*(filt+1)); end
 				1: begin end
-				2: begin							w11=qw[SIZE_1-1:0]; 
+				2: begin							
+							w11=qw[SIZE_1-1:0]; 
 							w12=qw[SIZE_2-1:SIZE_1]; 
 							w13=qw[SIZE_3-1:SIZE_2]; 
 							w14=qw[SIZE_4-1:SIZE_3]; 

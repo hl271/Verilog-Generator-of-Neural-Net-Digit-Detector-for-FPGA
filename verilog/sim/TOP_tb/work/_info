@@ -1,0 +1,402 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ADMIN/GithubClonedRepo/Verilog-Generator-of-Neural-Net-Digit-Detector-for-FPGA/verilog/sim/TOP_tb
+T_opt
+!s110 1703627504
+V4H07kfligzGBYNN25J`YU3
+04 4 4 work test fast 0
+=1-309c2317fce4-658b4af0-211-34e8
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.7c;67
+vaddressRAM
+Z2 !s110 1703627433
+!i10b 1
+!s100 LD^f790:3B83FW=1J0Z332
+I[U5m3Si5<:QIY;PikV<Hd0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1702390498
+8../../code/neuroset/addressRAM.v
+F../../code/neuroset/addressRAM.v
+L0 1
+Z5 OL;L;10.7c;67
+r1
+!s85 0
+31
+Z6 !s108 1703627433.000000
+Z7 !s107 ../../code/synt/sdram_controller.v|../../code/synt/fifo_1024x16.v|../../code/synt/delay_rg.v|../../code/synt/cam_wrp.v|../../code/neuroset/result.v|../../code/neuroset/maxpooling.v|../../code/neuroset/dense.v|../../code/neuroset/database.v|../../code/neuroset/conv_TOP.v|../../code/neuroset/conv.v|../../code/neuroset/border.v|../../code/neuroset/addressRAM.v|../../code/neuroset/TOP.v|../../code/neuroset/RAM.v|../../code/neuroset/DatabaseToMem.v|../../code/gray_28x28/grayscale.v|
+Z8 !s90 -reportprogress|300|../../code/gray_28x28/grayscale.v|../../code/neuroset/DatabaseToMem.v|../../code/neuroset/RAM.v|../../code/neuroset/TOP.v|../../code/neuroset/addressRAM.v|../../code/neuroset/border.v|../../code/neuroset/conv.v|../../code/neuroset/conv_TOP.v|../../code/neuroset/database.v|../../code/neuroset/dense.v|../../code/neuroset/maxpooling.v|../../code/neuroset/result.v|../../code/synt/cam_wrp.v|../../code/synt/delay_rg.v|../../code/synt/fifo_1024x16.v|../../code/synt/sdram_controller.v|
+!i113 0
+Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+naddress@r@a@m
+vborder
+R2
+!i10b 1
+!s100 [je7N7:XTVA]Pi87hk4213
+ICXFUA;Un<[<akkHA<PH>82
+R3
+R0
+R4
+8../../code/neuroset/border.v
+F../../code/neuroset/border.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vcam_proj_top
+!s110 1703627455
+!i10b 1
+!s100 6B;JR^WC>=lDfDU:K`64m0
+In0TLm6:ckjhOhhYgUTQ@;3
+R3
+R0
+w1703425283
+8../../top/cam_proj_top.v
+F../../top/cam_proj_top.v
+L0 7
+R5
+r1
+!s85 0
+31
+!s108 1703627455.000000
+!s107 ../../top/cam_proj_top.v|
+!s90 -reportprogress|300|../../top/cam_proj_top.v|
+!i113 0
+R9
+R1
+vcam_wrp
+R2
+!i10b 1
+!s100 ES@V?`CDhWh>chfeg9n<K1
+IZHEIGPFF=HgdIS>B7dcJ40
+R3
+R0
+R4
+8../../code/synt/cam_wrp.v
+F../../code/synt/cam_wrp.v
+L0 7
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vconv
+R2
+!i10b 1
+!s100 KXn_@oB_:Lc:@W^Y:bfcW1
+I>]AKI57=3gWFeDEW^THB=0
+R3
+R0
+w1703612808
+8../../code/neuroset/conv.v
+F../../code/neuroset/conv.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vconv_TOP
+R2
+!i10b 1
+!s100 BIVIaJ`g4BPmaEC:Vk]052
+IcNK=`aFlOz[Kz]F1?0mO@2
+R3
+R0
+w1703500817
+8../../code/neuroset/conv_TOP.v
+F../../code/neuroset/conv_TOP.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+nconv_@t@o@p
+vdatabase
+R2
+!i10b 1
+!s100 iL0EZZom>2b5UPRXn^NfS3
+IGKaJVl:ooM491hfN9n]9U2
+R3
+R0
+w1703559118
+8../../code/neuroset/database.v
+F../../code/neuroset/database.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vDatabaseToMem
+R2
+!i10b 1
+!s100 A;0EOhK21i<?2hDdjI]e`1
+I;EUo@F8fQXQgOVG9AC`WV0
+R3
+R0
+w1703562374
+8../../code/neuroset/DatabaseToMem.v
+F../../code/neuroset/DatabaseToMem.v
+L0 6
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@database@to@mem
+vdelay_rg
+R2
+!i10b 1
+!s100 JOlTCQ=GdfUMY?@f=0BUM2
+IMUJAHYm3DeQO@hW^C0dK?0
+R3
+R0
+R4
+8../../code/synt/delay_rg.v
+F../../code/synt/delay_rg.v
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vdense
+R2
+!i10b 1
+!s100 QL776ngXaS<<;m4^TXZ9`1
+IMIfiKdn53d7K`HRacgAEZ3
+R3
+R0
+R4
+8../../code/neuroset/dense.v
+F../../code/neuroset/dense.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vfifo_1024x16
+R2
+!i10b 1
+!s100 0NLRiJV<VajKkA^HUjaIn2
+ITaj?;LRN]5eWBK0W]gk5W3
+R3
+R0
+R4
+8../../code/synt/fifo_1024x16.v
+F../../code/synt/fifo_1024x16.v
+L0 39
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vmaxp
+R2
+!i10b 1
+!s100 K1`BNJdX^gd`FWOMBH3HC1
+Ih8:Z0c>anIe6=UQS_P_Q=1
+R3
+R0
+R4
+8../../code/neuroset/maxpooling.v
+F../../code/neuroset/maxpooling.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vpre_v2
+R2
+!i10b 1
+!s100 Fo2NNBik95fLG9Wg>=Z<e3
+I9ZnYJiLNzQ48GI1W<>R?C2
+R3
+R0
+R4
+8../../code/gray_28x28/grayscale.v
+F../../code/gray_28x28/grayscale.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vRAM
+R2
+!i10b 1
+!s100 2US1=9b8MZ]88kDX;O]kK3
+IL3:9lDY5bMZLA;i1e4FXc3
+R3
+R0
+w1703562338
+8../../code/neuroset/RAM.v
+F../../code/neuroset/RAM.v
+L0 6
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@r@a@m
+vresult
+R2
+!i10b 1
+!s100 k>X8DJlTZ6QL]IZYX7EIz0
+Ii:ONWSAE:;LHB[3Qgc5=12
+R3
+R0
+R4
+8../../code/neuroset/result.v
+F../../code/neuroset/result.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vsdram_controller
+R2
+!i10b 1
+!s100 IM<d6fE2_@hMl]n?29AYg3
+IP;J^FbLbd3WKdNhBSn9@91
+R3
+R0
+R4
+8../../code/synt/sdram_controller.v
+F../../code/synt/sdram_controller.v
+L0 25
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vtest
+!s110 1703627498
+!i10b 1
+!s100 <5OM^?6DhbWFASM=Cf_]:0
+IW<l5_kPkS^h<iGFA8]PGd0
+R3
+R0
+w1703508586
+8TOP_tb.v
+FTOP_tb.v
+L0 3
+R5
+r1
+!s85 0
+31
+!s108 1703627498.000000
+!s107 TOP_tb.v|
+!s90 -reportprogress|300|TOP_tb.v|
+!i113 0
+R9
+R1
+vTOP
+R2
+!i10b 1
+!s100 =Wm6F777KK^l@GZW?f<0H0
+INKbH<loK<B]jaYZWQA0R40
+R3
+R0
+w1703562105
+8../../code/neuroset/TOP.v
+F../../code/neuroset/TOP.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@t@o@p

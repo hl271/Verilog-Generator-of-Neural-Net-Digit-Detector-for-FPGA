@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -23.942
+TNS   : -11914.003
+
+Type  : Slow 1200mV 85C Model Setup 'memorywork:block|step[0]'
+Slack : -8.366
+TNS   : -141.188
+
+Type  : Slow 1200mV 85C Model Setup 'conv_TOP:conv|STOP'
+Slack : -5.844
+TNS   : -70.102
+
+Type  : Slow 1200mV 85C Model Setup 'nextstep'
+Slack : -0.903
+TNS   : -3.313
+
+Type  : Slow 1200mV 85C Model Hold 'conv_TOP:conv|STOP'
+Slack : 0.282
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.335
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'nextstep'
+Slack : 0.465
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'memorywork:block|step[0]'
+Slack : 0.720
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -2064.548
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'conv_TOP:conv|STOP'
+Slack : -3.000
+TNS   : -30.420
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'nextstep'
+Slack : -1.285
+TNS   : -6.425
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'memorywork:block|step[0]'
+Slack : -0.409
+TNS   : -28.662
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -21.727
+TNS   : -10715.635
+
+Type  : Slow 1200mV 0C Model Setup 'memorywork:block|step[0]'
+Slack : -7.767
+TNS   : -131.523
+
+Type  : Slow 1200mV 0C Model Setup 'conv_TOP:conv|STOP'
+Slack : -5.214
+TNS   : -62.122
+
+Type  : Slow 1200mV 0C Model Setup 'nextstep'
+Slack : -0.700
+TNS   : -2.456
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'conv_TOP:conv|STOP'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'nextstep'
+Slack : 0.419
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'memorywork:block|step[0]'
+Slack : 0.804
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -2057.634
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'conv_TOP:conv|STOP'
+Slack : -3.000
+TNS   : -30.420
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'nextstep'
+Slack : -1.285
+TNS   : -6.425
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'memorywork:block|step[0]'
+Slack : -0.419
+TNS   : -22.263
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -11.296
+TNS   : -5312.394
+
+Type  : Fast 1200mV 0C Model Setup 'memorywork:block|step[0]'
+Slack : -4.481
+TNS   : -73.359
+
+Type  : Fast 1200mV 0C Model Setup 'conv_TOP:conv|STOP'
+Slack : -2.400
+TNS   : -26.516
+
+Type  : Fast 1200mV 0C Model Setup 'nextstep'
+Slack : 0.088
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.032
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'conv_TOP:conv|STOP'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'nextstep'
+Slack : 0.211
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'memorywork:block|step[0]'
+Slack : 0.242
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -1516.796
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'conv_TOP:conv|STOP'
+Slack : -1.000
+TNS   : -17.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'nextstep'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'memorywork:block|step[0]'
+Slack : -0.058
+TNS   : -1.724
+
+------------------------------------------------------------

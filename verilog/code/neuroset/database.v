@@ -1,18 +1,19 @@
 module database(clk,datata,re,address,we,dp,address_p);
 
-parameter SIZE=0;
+parameter SIZE=11;
 
-input clk;
-output reg signed [SIZE-1:0] datata;
-input re,we;
-input [12:0] address;
-input signed [SIZE-1:0] dp;
-input [12:0] address_p;
+input               clk;
+input               re,we;
+input               [12:0] address;         //address for read
+input signed        [SIZE-1:0] dp;          //data input (used when we=1)
+input               [12:0] address_p;       //address for write
+output reg signed   [SIZE-1:0] datata;      //data output (used when re=1)
 
-reg signed [SIZE-1:0] storage [5459:0];
+reg signed [SIZE-1:0] storage [5459:0];     // A memory storage with word size 11-bit for both image pixels (first 784=28*28 items) and weights (remaining items)
 
 initial begin
-
+// The pixel values (first 784 words) of the input image are initialized to zero
+// The weights (remaining words) of the trained neural network are populated
 storage[0] =  11'b0;
 storage[1] =  11'b0;
 storage[2] =  11'b0;

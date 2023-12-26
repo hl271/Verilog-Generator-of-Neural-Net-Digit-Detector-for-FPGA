@@ -16,8 +16,8 @@ module cam_proj_top
 	input wire HREF_cam,
 	input wire PCLK_cam,
 	output wire XCLK_cam,
-	output reg res_cam,
-	output reg on_off_cam,
+	output wire res_cam,
+	output wire on_off_cam,
 	output wire sioc,
 	output wire siod,
 	//VGA
